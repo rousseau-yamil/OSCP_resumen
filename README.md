@@ -5,10 +5,11 @@ https://github.com/Tib3rius/AutoRecon
 
 ## NMAP 
 ### 3nmaps inicial, full y udp en paralelo
+
 nmap -sV -O --top-ports 50 --open -oA nmap/inicial <ip>
 nmap -sC -sV -O --open -p -oA nmap/full <ip>
 nmap -sU -p- -oA nmap/udp <ip>
------
+
 nmap --scripts vuln,safe,discovery -p 443,80 <ip>
 
 Inhabilitado el ping icmp
